@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+    <title>Dulce Angel</title>
+    <link rel="icon" type="image/png" href="img/cupcake.png">
+</head>
+
+<body>
+
+    <div class="contenido-principal">
+        <div class="fondo" id="fondo">
+            <h1 class="texto-principal">Dulce Angel</h1>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#fondo"><img class="logo" src="img/img3.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fondo">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Mis Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div id="nosotros" class="row nosotros justify-content-center" >
+            <div class="col-12 text-center">
+                <img class="img-left float-left" src="img/img5.png" alt="imagen">
+                <img class="img-right float-right" src="img/img5.png" alt="imagen">
+                <h2 class="texto-secundario">¿Quién soy?</h2>
+                <h3 class="titulo-secundario">Pasión por la respostería</h3>
+                <p class="parrafo-secundario">Desde chica, siempre me encantaba cocinar cosas dulces y hasta el día de
+                    hoy me sigue encantando. En la actualidad, hago un curso de repostería para seguir creciendo y aprendiendo. 
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row productos" id="productos">
+            <article class="col-12 text-center">
+                <h2 class="subtitulo-terciario">Los productos que ofrezco</h2>
+                <p class="parrafo-terciario">Cada producto que hago es artesanal, de excelente calidad y lo realizo con mucho amor. 
+                He tenido, por suerte, buenos comentarios con respecto a mis productos. Compruebe mi experiencia.</p>
+            </article>
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/productos/img5.jpg" class="img-fluid" alt="imagen">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">CupCakes</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/productos/img1.jpg" class="img-fluid" alt="imagen">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Tarta Frutal</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/productos/img4.jpg" class="img-fluid" alt="imagen">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Bombones</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/productos/img3.jpg" class="img-fluid" alt="imagen">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Tarta de ricota</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <button class="d-block btn-productos btn"><a class="text-white" href="page/productos.html">Ver más productos</a></button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div id="contacto" class="row contacto">
+            <div class="col-md-6 topmargin-sm">
+                <h2 class="titulo-contacto">Contacta Aquí...</h2><br>
+                <p class="parrafo-contacto">Podes hacernos todas las consultas que necesites.</p>
+            </div>
+            <div class="col-md-6 topmargin-sm formulario">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="Nombre">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="apellidos" placeholder="Apellido"
+                                name="Apellido">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="Email">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="servicio" placeholder="Producto solicitado"
+                                name="Servicio solicitado">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" id="Consulta" placeholder="Consulta"
+                                name="Consulta"> </textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <a class="btn btn-dark full-width text-white">Haz tu consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><hr>
+
+        <footer class="container-fluid justify-content-center footer">
+                <div class="contenido-img">
+                    <img class=" logo-footer" src="img/img3.jpg" alt="logo">
+                </div>
+                <ul class="lista-menu">
+                    <li class="list-inline-item footer-menu"><a href="#fondo">Inicio</a></li>
+                    <li class="list-inline-item footer-menu"><a href="#nosotros">Sobre Mí</a></li>
+                    <li class="list-inline-item footer-menu"><a href="#productos">Mis Productos</a></li>
+                    <li class="list-inline-item footer-menu"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <ul class="lista-menu">
+                    <li class="list-inline-item footer-menu"><a href="https://api.whatsapp.com/send?phone=1156622062&text=Hola,%20me%20interesar%C3%ADa%20saber%20sobre%20el%20producto..." target="_blank" title="Enviar WhatsApp a Dulce Angel"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="list-inline-item footer-menu"><a href="https://www.instagram.com/dulce_angel42/" target="_blank" title="Contactar a Dulce Angel por Instragram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item footer-menu"><a href="https://www.facebook.com/angela.colman.7505" target="_blank" title="Contactar a Dulce Angel por Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="list-inline-item footer-menu"><a href="mailto:mariaangelacolman@hotmail.com" target="_blank" title="Enviar un Email a Dulce Angel"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <small>©2020 Dulce Angel. Created by MMC</small>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+.contenido-principal{
+    width: 100%;
+    height: 100vh; /*alto para dispositivo movil*/
+    background-image: url(../img/bg.png);
+    background-color: #ffaeb9;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.contenido-principal .fondo{
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/cup.png);
+}
+.contenido-principal .texto-principal{
+    width: calc(100vw - 20px);/*que abarque el 100% de la pantalla. Con la propiedad calc podemos achicar el tamaño, esto lo hacemos para que desaparezca el scroll*/
+    height: 100vh;
+    font-size: 77px;
+    color:	#ea3b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*mix-blend-mode: multiply; para darle una transparecia al titulo*/
+}
+.navbar{
+    background-color: #ea3b6b;
+    width: 100%;
+    position: sticky;/*Mantiene fijo el navbar abajo del header*/
+    top: 0;
+    padding: 0 80px 0 80px;
+    transition: .5 ease all;
+}
+.navbar-brand{
+    width: 20%;
+}
+.navbar-brand img{
+    width: 95%;
+    border-radius: 5px;
+    border: 5px solid #ce5978;
+}
+
+.navbar .nav-link{
+    color: #ffffff;
+}
+.navbar a:hover{
+    transform: translateY(5px);
+    background-color: #ea3b6b;
+}
+.nosotros{
+    background: url(../img/watercolor.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 30px 0;
+}
+.texto-secundario{
+    margin: 25px 0;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.img-left{
+    width: 70px;
+    margin: 0 40px;
+    border-radius: 5px;
+    border: 3px solid #ce5978;
+}
+.img-right{
+    width: 70px;
+    margin: 0 40px;
+    border-radius: 5px;
+    border: 3px solid #ce5978;
+}
+.img-right:hover{
+    transform: scale(1.2);
+}
+.img-left:hover{
+    transform: scale(1.2);
+}
+.titulo-secundario{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.parrafo-secundario{
+    font-size: 25px;
+}
+.productos{
+    background-color: #ffeaf0;
+    margin: 30px 0;
+    padding: 20px 20px;
+}
+.subtitulo-terciario{
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.parrafo-terciario{
+    font-size: 25px;
+}
+.productos .producto{
+    position: relative;
+    width: 100%;
+}
+.productos .overlay{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ea3b6b ;
+    overflow: hidden;
+    transition: .5s ease;
+}
+.productos .producto:hover .overlay{
+	width: 100%;
+	opacity: .8;
+}
+.productos .producto .overlay-texto{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;/*pone todo el texto en una linea*/
+    color: #ffffff;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.productos .btn-productos {
+	background-color: #ea3b6b;
+	color: #ffffff;
+	padding: 7px 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	border: 2px solid transparent;
+	transition: .3s ease;
+}
+
+.productos .btn-productos:hover {
+	background-color: transparent;
+	border: 2px solid #ea3b6b;
+	color: #ea3b6b;
+}
+.contacto{
+    background: url(../img/pixel-heart.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 30px;
+}
+.contacto .titulo-contacto{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+.contacto .parrafo-contacto{
+    font-size: 25px;
+    text-align: center;
+}
+.contacto .btn:hover{
+    transform: scale(1.2);
+}
+.footer{
+    background-color: #ea3b6b;
+}
+.footer .contenido-img{
+    text-align: center;
+}
+.footer .logo-footer{
+    width: 15%;
+    border-radius: 5px;
+    border: 5px solid #ce5978;
+    margin: 20px 20px;
+}
+.footer .lista-menu{
+    text-align: center;
+    margin-right: 40px;
+}
+.footer .list-inline-item a{
+    font-size: 20px;
+    color: #ffffff;
+    padding: 0 10px 0 10px;
+    transition: .3s ease all;
+}
+ .footer .list-inline-item:hover{
+    background-color: transparent;
+    color: 	#ffaeb9;
+    transform: scale(1.2);
+}
+.footer small{
+    color: #ffffff;
+    position: relative;
+    left:550px;
+}
+/************* MEDIA **************/
+
+@media only screen and(max-width: 480px)
+{
+    .contenido-principal{
+        width: 100%;
+        height: 100vh; /*alto para dispositivo movil*/
+        background-image: url(../img/bg.png);  
+        background-size: cover;      
+        background-position: center center;
+        background-attachment: fixed;
+    }
+   .contenido-principal .texto-principal{
+       font-size: 77px;
+       text-align: center;
+   }
+   .navbar{
+       padding: 0 20px 0 20px;
+   }
+   .navbar-brand img{
+       width: 30%;
+   }
+   .texto-secundario{
+       margin-top: 20px;
+       font-size: 30px;
+   }
+   .img-left{
+       width: 50px;
+       margin: 0;
+   }
+   .img-right{
+       width: 50px;
+       margin: 0;
+   }
+   .titulo-secundario{
+       margin-top: 40px;
+   }
+    .footer .logo-footer{
+        width: 50%;
+   }
+   .footer small{
+    color: #ffffff;
+    position: relative;
+    left: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .contenido-principal{
+        width: 100%;
+        height: 100vh; /*alto para dispositivo movil*/
+        background-image: url(../img/bg.png);  
+        background-size: cover;      
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .contenido-principal .texto-principal{
+        font-size: 77px;
+        text-align: center center;
+    }
+    .navbar{
+        padding: 0 20px 0 20px;
+    }
+    .navbar-brand img{
+        width: 180%;
+    }
+    .texto-secundario{
+        margin-top: 15px;
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    .img-left{
+        margin: 0 15px;
+        width: 55px;
+    }
+    .img-right{
+        margin: 0 15px;
+        width: 55px;
+    }
+    .titulo-secundario{
+        margin-top: 30px;
+    }
+     .footer .logo-footer{
+         width: 30%;
+    }
+    .footer small{
+        color: #ffffff;
+        position: relative;
+        left: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .contenido-principal{
+        width: 100%;
+        height: 100vh; /*alto para dispositivo movil*/
+        background-image: url(../img/bg.png);  
+        background-size: cover;      
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .contenido-principal .texto-principal{
+        font-size: 80px;
+        text-align: center;
+    }
+    .navbar{
+        padding: 0 80px 0 80px;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    .texto-secundario{
+        margin-top: 15px;
+        font-size: 40px;
+    }
+    .img-left{
+        width: 70px;
+        margin: 0 50px;
+    }
+    .img-right{
+        width: 70px;
+        margin: 0 50px;
+    }
+    .titulo-secundario{
+        margin: 20px;
+    }
+     .footer .logo-footer{
+         width: 15%;
+    }
+    .footer small{
+    color: #ffffff;
+    position: relative;
+    left: 550px;
+    }
+}
